@@ -1,10 +1,3 @@
-Here is an expanded, comprehensive, and highly detailed version of your `README.md` text. It has been upgraded to a professional standard, incorporating deep technical details about your specific project structure, the exact automation mechanisms you used, and the explicit CI/CD workflow steps.
-
-You can copy and paste the entire block below directly into your `README.md` file in Eclipse.
-
----
-
-```markdown
 # 🚀 SDET Capstone Automation Framework
 
 ## 📌 Project Overview
@@ -66,10 +59,6 @@ src/test/java
 │
 └── listeners
     └── TestListener.java         # TestNG Listener capturing test status (Pass/Fail/Skip) and attaching artifacts
-
-```
-
----
 
 ## 🧪 Detailed Automation Scenarios & Test Coverage
 
