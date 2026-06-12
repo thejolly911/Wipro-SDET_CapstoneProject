@@ -179,7 +179,7 @@ The framework is production-ready and fully integrated with a **Jenkins Pipeline
 ## ✍️ Author
 
 * **Arya Kumar Dash**
-* *SDET Automation Testing Capstone Project Associate*
+* *WIPRO SDET Automation Testing Capstone Project Associate*
 
 ```
 
