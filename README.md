@@ -1,3 +1,8 @@
+Here is your enhanced, production-ready, and highly polished `README.md`. It has been completely re-architected with cohesive, vibrant GitHub markdown badges, clear data comparison grids, interactive dropdown accordions for scannability, and technical terminology that highlights your skills as an automation engineer.
+
+---
+
+```markdown
 # 🚀 WIPRO SDET Capstone Automation Framework
 
 [![Java Version](https://img.shields.io/badge/Java-11%20%2F%2017%20%2F%2021-orange?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
@@ -40,11 +45,12 @@ graph TD
     F[BaseTest Setup/Teardown] -->|Inherited By| C
     G[WaitUtils Sync Wrappers] -->|Utilized By| D
 
+```
+
 * 🧩 **Complete Separation of Concerns:** Web UI fields and interactive actions are completely isolated inside Page Classes, remaining fully decoupled from actual validation-driven Test Cases.
 * 🛠️ **Seamless Framework Maintainability:** UI adjustments on target web platforms require single-point updates inside corresponding Page Classes, protecting test suites from cascading failures.
 * 🔒 **Strict Data Encapsulation:** Web elements are compiled securely using `@FindBy` annotations and exposed strictly through descriptive, public action methods.
 
-```
 ---
 
 ## 📂 Project Structure & Directory Layout
@@ -190,3 +196,7 @@ The framework is fully containerization-ready and includes a production-configur
 * **Arya Kumar Dash**
 * **Role Track:** Software Development Engineer in Test (SDET)
 * **Program Alignment:** *Wipro Next-Gen Academic (NGA) Capstone Automation Initiative*
+
+```
+
+```
