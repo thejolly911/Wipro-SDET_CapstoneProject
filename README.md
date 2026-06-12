@@ -40,8 +40,6 @@ graph TD
     F[BaseTest Setup/Teardown] -->|Inherited By| C
     G[WaitUtils Sync Wrappers] -->|Utilized By| D
 
-```
-
 * 🧩 **Complete Separation of Concerns:** Web UI fields and interactive actions are completely isolated inside Page Classes, remaining fully decoupled from actual validation-driven Test Cases.
 * 🛠️ **Seamless Framework Maintainability:** UI adjustments on target web platforms require single-point updates inside corresponding Page Classes, protecting test suites from cascading failures.
 * 🔒 **Strict Data Encapsulation:** Web elements are compiled securely using `@FindBy` annotations and exposed strictly through descriptive, public action methods.
