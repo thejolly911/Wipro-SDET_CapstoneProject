@@ -2,6 +2,7 @@ package testcases;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -15,7 +16,7 @@ import pages.ParaBankRegistrationPage;
 public class ParaBankRegistrationTest extends BaseTest {
 
     @Test
-    public void verifyRegistrationAndLogin() throws InterruptedException {
+    public void verifyRegistrationAndLogin() {
 
         driver.get(
                 "https://parabank.parasoft.com/parabank/register.htm");
@@ -29,50 +30,86 @@ public class ParaBankRegistrationTest extends BaseTest {
         ParaBankLoginPage loginPage =
                 new ParaBankLoginPage(driver);
 
-        // Register user
-        String username = registerPage.registerUser();
+        WebDriverWait wait =
+                new WebDriverWait(driver,
+                        Duration.ofSeconds(20));
 
-        System.out.println("Registered Username = " + username);
-        System.out.println(driver.getTitle());
-        System.out.println(driver.getCurrentUrl());
+        // Register User
+        String username =
+                registerPage.registerUser();
 
-        Thread.sleep(5000);
+        System.out.println(
+                "Registered Username = "
+                + username);
 
-        System.out.println("Registration Successful");
+        // Verify Registration Success
+        wait.until(
+                ExpectedConditions.visibilityOfElementLocated(
+                        By.xpath("//h1[contains(text(),'Welcome')]")));
+
+        Assert.assertTrue(
+                driver.getPageSource()
+                      .contains("Welcome"),
+                "Registration failed");
+
+        System.out.println(
+                "Registration Successful");
 
         // Logout
         homePage.logout();
 
-        // Wait until login page appears
-        WebDriverWait wait =
-                new WebDriverWait(driver, Duration.ofSeconds(15));
-
+        // Wait for Login Page
         wait.until(
                 ExpectedConditions.visibilityOfElementLocated(
-                        org.openqa.selenium.By.name("username")));
+                        By.name("username")));
 
-        // Login again
-        loginPage.login(username, "Password123");
+        System.out.println(
+                "Logout Successful");
 
-        // Wait for Accounts Overview page
+     // Login Again
+        loginPage.login(
+                username,
+                "Password123");
+
+       
+
+        // Print error/debug information
+        System.out.println("After Login URL = "
+                + driver.getCurrentUrl());
+
+        System.out.println("After Login Title = "
+                + driver.getTitle());
+
+        System.out.println("PAGE CONTENT:");
+        System.out.println(
+                driver.findElement(By.tagName("body"))
+                      .getText());
+
+        // Wait for Accounts Overview Page
         wait.until(
-                ExpectedConditions.or(
-                        ExpectedConditions.titleContains("ParaBank"),
-                        ExpectedConditions.presenceOfElementLocated(
-                                org.openqa.selenium.By.linkText("Accounts Overview"))));
+                ExpectedConditions.urlContains(
+                        "overview.htm"));
 
-        System.out.println("Current URL = " + driver.getCurrentUrl());
-        System.out.println("Page Title = " + driver.getTitle());
+        System.out.println(
+                "Current URL = "
+                + driver.getCurrentUrl());
 
-        boolean loginSuccess =
-                driver.getPageSource().contains("Accounts Overview");
+        System.out.println(
+                "Page Title = "
+                + driver.getTitle());
 
-        System.out.println("Login Success = " + loginSuccess);
+        // Verify Login
+        Assert.assertTrue(
+                driver.getCurrentUrl()
+                      .contains("overview.htm"),
+                "Login failed");
 
         Assert.assertTrue(
-                loginSuccess,
-                "Login failed - Accounts Overview not found");
+                driver.getPageSource()
+                      .contains("Accounts Overview"),
+                "Accounts Overview not found");
 
-        System.out.println("Login Successful");
+        System.out.println(
+                "Login Successful");
     }
 }

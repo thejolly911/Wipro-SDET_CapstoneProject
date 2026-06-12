@@ -11,23 +11,32 @@ public class ParaBankLoginPage {
         this.driver = driver;
     }
 
-    By usernameField = By.name("username");
+    By usernameField =
+            By.name("username");
 
-    By passwordField = By.name("password");
+    By passwordField =
+            By.name("password");
 
     By loginButton =
             By.xpath("//input[@value='Log In']");
-    
-    public void login(String username,
+
+    public void login(
+            String username,
             String password) {
 
-driver.findElement(usernameField)
-      .sendKeys(username);
+        driver.findElement(usernameField)
+              .clear();
 
-driver.findElement(passwordField)
-      .sendKeys(password);
+        driver.findElement(usernameField)
+              .sendKeys(username);
 
-driver.findElement(loginButton)
-      .click();
-}
+        driver.findElement(passwordField)
+              .clear();
+
+        driver.findElement(passwordField)
+              .sendKeys(password);
+
+        driver.findElement(loginButton)
+              .click();
+    }
 }

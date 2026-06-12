@@ -28,49 +28,48 @@ public class ParaBankRegistrationPage {
 
     By registerButton =
             By.xpath("//input[@value='Register']");
-    
+
     public String registerUser() {
 
         String uniqueUser =
                 "user" +
                 System.currentTimeMillis();
-        //unique username
 
         driver.findElement(firstName)
-                .sendKeys("Demo");
+              .sendKeys("Demo");
 
         driver.findElement(lastName)
-                .sendKeys("User");
+              .sendKeys("User");
 
         driver.findElement(address)
-                .sendKeys("Demo Address");
+              .sendKeys("Demo Address");
 
         driver.findElement(city)
-                .sendKeys("Boston");
+              .sendKeys("Boston");
 
         driver.findElement(state)
-                .sendKeys("MA");
+              .sendKeys("MA");
 
         driver.findElement(zipCode)
-                .sendKeys("12345");
+              .sendKeys("12345");
 
         driver.findElement(phone)
-                .sendKeys("9876543210");
+              .sendKeys("9876543210");
 
         driver.findElement(ssn)
-                .sendKeys("12345");
+              .sendKeys("12345");
 
         driver.findElement(username)
-                .sendKeys(uniqueUser);
+              .sendKeys(uniqueUser);
 
         driver.findElement(password)
-                .sendKeys("Password123");
+              .sendKeys("Password123");
 
         driver.findElement(confirmPassword)
-                .sendKeys("Password123");
+              .sendKeys("Password123");
 
         driver.findElement(registerButton)
-                .click();
+              .click();
 
         return uniqueUser;
     }

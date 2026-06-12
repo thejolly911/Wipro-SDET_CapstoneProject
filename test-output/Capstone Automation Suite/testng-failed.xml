@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="listeners.TestListener"/>
   </listeners>
-  <test thread-count="5" name="GUI Elements Test(failed)">
+  <test thread-count="5" name="ParaBank Registration Test(failed)">
     <classes>
-      <class name="testcases.GuiElementsTest">
+      <class name="testcases.ParaBankRegistrationTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="verifyGuiElements"/>
+          <include name="verifyRegistrationAndLogin"/>
         </methods>
-      </class> <!-- testcases.GuiElementsTest -->
+      </class> <!-- testcases.ParaBankRegistrationTest -->
     </classes>
-  </test> <!-- GUI Elements Test(failed) -->
+  </test> <!-- ParaBank Registration Test(failed) -->
 </suite> <!-- Failed suite [Capstone Automation Suite] -->

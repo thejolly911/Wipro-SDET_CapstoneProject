@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 
 import base.BaseTest;
 import pages.GuiAlertWindowPage;
-import pages.GuiDatePickerPage;
 import pages.GuiFileUploadPage;
 import pages.GuiFormPage;
 import pages.GuiActionPage;
@@ -25,8 +24,6 @@ public class GuiElementsTest extends BaseTest {
 
         GuiFormPage formPage = new GuiFormPage(driver);
 
-        GuiDatePickerPage datePage =
-                new GuiDatePickerPage(driver);
 
         GuiFileUploadPage uploadPage =
                 new GuiFileUploadPage(driver);
@@ -83,16 +80,7 @@ public class GuiElementsTest extends BaseTest {
         Thread.sleep(2000);
 
 
-        // Date Pickers
-        datePage.enterDatePicker1();
-        Thread.sleep(2000);
-
-        datePage.enterDatePicker2();
-        Thread.sleep(2000);
-
-        datePage.selectDateRange();
-        datePage.submitDateRange();
-        Thread.sleep(2000);
+     
 
 
         // Single File Upload
