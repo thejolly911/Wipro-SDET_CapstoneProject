@@ -1,4 +1,3 @@
-```markdown
 # 🚀 WIPRO SDET Capstone Automation Framework
 
 [![Java Version](https://img.shields.io/badge/Java-11%20%2F%2017%20%2F%2021-orange?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
