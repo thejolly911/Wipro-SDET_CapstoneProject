@@ -44,6 +44,7 @@ graph TD
 * 🛠️ **Seamless Framework Maintainability:** UI adjustments on target web platforms require single-point updates inside corresponding Page Classes, protecting test suites from cascading failures.
 * 🔒 **Strict Data Encapsulation:** Web elements are compiled securely using `@FindBy` annotations and exposed strictly through descriptive, public action methods.
 
+```
 ---
 
 ## 📂 Project Structure & Directory Layout
