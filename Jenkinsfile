@@ -8,10 +8,7 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/thejolly911/Wipro-SDET_CapstoneProject'
-            }
+      
         }
 
         stage('Build') {
