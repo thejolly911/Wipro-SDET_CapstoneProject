@@ -1,25 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-12T13:09:02 IST" name="Default suite" finished-at="2026-06-12T13:09:11 IST" duration-ms="8718">
+  <suite started-at="2026-06-13T00:49:58 IST" name="Capstone Automation Suite" finished-at="2026-06-13T00:53:13 IST" duration-ms="194354">
     <groups>
     </groups>
-    <test started-at="2026-06-12T13:09:02 IST" name="Default test" finished-at="2026-06-12T13:09:11 IST" duration-ms="8718">
-      <class name="testcases.ParaBankRegistrationTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ParaBankRegistrationTest@22555ebf]" started-at="2026-06-12T13:09:02 IST" name="setUp" finished-at="2026-06-12T13:09:04 IST" duration-ms="1872" status="PASS">
+    <test started-at="2026-06-13T00:49:58 IST" name="GUI Elements Test" finished-at="2026-06-13T00:52:39 IST" duration-ms="160808">
+      <class name="testcases.GuiElementsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.GuiElementsTest@49b2a47d]" started-at="2026-06-13T00:49:58 IST" name="setUp" finished-at="2026-06-13T00:50:10 IST" duration-ms="11174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyRegistrationAndLogin()[pri:0, instance:testcases.ParaBankRegistrationTest@22555ebf]" started-at="2026-06-12T13:09:04 IST" name="verifyRegistrationAndLogin" finished-at="2026-06-12T13:09:10 IST" duration-ms="6654" status="PASS">
+        <test-method signature="verifyGuiElements()[pri:0, instance:testcases.GuiElementsTest@49b2a47d]" started-at="2026-06-13T00:50:10 IST" name="verifyGuiElements" finished-at="2026-06-13T00:52:39 IST" duration-ms="149279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGuiElements -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.GuiElementsTest@49b2a47d]" started-at="2026-06-13T00:52:39 IST" name="tearDown" finished-at="2026-06-13T00:52:39 IST" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.GuiElementsTest -->
+    </test> <!-- GUI Elements Test -->
+    <test started-at="2026-06-13T00:52:40 IST" name="ParaBank Registration Test" finished-at="2026-06-13T00:52:52 IST" duration-ms="12661">
+      <class name="testcases.ParaBankRegistrationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ParaBankRegistrationTest@389b0789]" started-at="2026-06-13T00:52:40 IST" name="setUp" finished-at="2026-06-13T00:52:41 IST" duration-ms="1125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRegistrationAndLogin()[pri:0, instance:testcases.ParaBankRegistrationTest@389b0789]" started-at="2026-06-13T00:52:41 IST" name="verifyRegistrationAndLogin" finished-at="2026-06-13T00:52:52 IST" duration-ms="11322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistrationAndLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.ParaBankRegistrationTest@22555ebf]" started-at="2026-06-12T13:09:10 IST" name="tearDown" finished-at="2026-06-12T13:09:11 IST" duration-ms="157" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.ParaBankRegistrationTest@389b0789]" started-at="2026-06-13T00:52:52 IST" name="tearDown" finished-at="2026-06-13T00:52:52 IST" duration-ms="208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.ParaBankRegistrationTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- ParaBank Registration Test -->
+    <test started-at="2026-06-13T00:52:52 IST" name="BlazeDemo Flight Booking Test" finished-at="2026-06-13T00:53:13 IST" duration-ms="20446">
+      <class name="testcases.BlazeDemoTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.BlazeDemoTest@c667f46]" started-at="2026-06-13T00:52:52 IST" name="setUp" finished-at="2026-06-13T00:52:53 IST" duration-ms="786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyFlightBooking()[pri:0, instance:testcases.BlazeDemoTest@c667f46]" started-at="2026-06-13T00:52:53 IST" name="verifyFlightBooking" finished-at="2026-06-13T00:53:13 IST" duration-ms="19452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFlightBooking -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.BlazeDemoTest@c667f46]" started-at="2026-06-13T00:53:13 IST" name="tearDown" finished-at="2026-06-13T00:53:13 IST" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.BlazeDemoTest -->
+    </test> <!-- BlazeDemo Flight Booking Test -->
+  </suite> <!-- Capstone Automation Suite -->
 </testng-results>
