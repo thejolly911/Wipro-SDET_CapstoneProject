@@ -1,8 +1,3 @@
-Here is your enhanced, production-ready, and highly polished `README.md`. It has been completely re-architected with cohesive, vibrant GitHub markdown badges, clear data comparison grids, interactive dropdown accordions for scannability, and technical terminology that highlights your skills as an automation engineer.
-
----
-
-```markdown
 # 🚀 WIPRO SDET Capstone Automation Framework
 
 [![Java Version](https://img.shields.io/badge/Java-11%20%2F%2017%20%2F%2021-orange?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
